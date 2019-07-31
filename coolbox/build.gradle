@@ -16,4 +16,3 @@ jar {
 
 apply plugin: 'application'
 
-mainClassName = 'hello.HelloWorld'
