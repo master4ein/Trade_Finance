@@ -8,8 +8,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="coolbox_main" />
+    <orderEntry type="module" module-name="coolbox.main" />
     <orderEntry type="library" name="Gradle: joda-time:joda-time:2.2" level="project" />
   </component>
-  <component name="TestModuleProperties" production-module="coolbox_main" />
+  <component name="TestModuleProperties" production-module="coolbox.main" />
 </module>

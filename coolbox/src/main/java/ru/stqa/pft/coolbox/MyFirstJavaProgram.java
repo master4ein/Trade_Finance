@@ -1,3 +1,5 @@
+package ru.stqa.pft.coolbox;
+
 public class MyFirstJavaProgram {
 
    /* This is my first java program.
