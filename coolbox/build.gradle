@@ -16,3 +16,11 @@ jar {
 
 apply plugin: 'application'
 
+repositories {
+    mavenCentral ()
+}
+
+dependencies {
+    implementation 'org.testng:testng:7.0.0-beta7'
+}
+
