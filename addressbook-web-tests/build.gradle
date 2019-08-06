@@ -28,7 +28,5 @@ dependencies {
     implementation 'org.seleniumhq.selenium:selenium-chromium-driver:4.0.0-alpha-2'
     implementation 'junit:junit:4.13-beta-3'
     implementation 'com.github.igor-suhorukov:chromedriver:2.44'
-    implementation 'org.seleniumhq.selenium:selenium-firefox-driver:4.0.0-alpha-2'
-
 }
 

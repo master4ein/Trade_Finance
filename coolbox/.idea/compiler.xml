@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+    </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="addressbook-web-tests.main" target="1.8" />
+      <module name="addressbook-web-tests.test" target="1.8" />
       <module name="coolbox.main" target="1.8" />
       <module name="coolbox.test" target="1.8" />
-      <module name="coolbox_main" target="1.8" />
-      <module name="coolbox_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
