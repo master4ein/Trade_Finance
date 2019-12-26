@@ -1,0 +1,1 @@
+[1129/104504.802:ERROR:filesystem_win.cc(148)] DeleteFile C:\Users\YD052CKF\AppData\Local\Google\Chrome\User Data\Crashpad\reports\d9c378d1-9701-460b-b048-9c38c4c3fb71.dmp: Процесс не может получить доступ к файлу, так как этот файл занят другим процессом. (0x20)

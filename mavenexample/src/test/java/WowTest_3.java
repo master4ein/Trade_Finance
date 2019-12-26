@@ -1,3 +1,5 @@
+import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.Selenide;
 import org.openqa.selenium.By;
 
 import org.junit.Before;
@@ -10,9 +12,9 @@ public class WowTest_3 {
 
     @Test
     public void userCanLoginByUsername() {
-        open("http://google.com");
-        $(By.name("q")).val("selenide").pressEnter();
-        $("#ires .g").shouldHave(text("selenide.org"));
+        Selenide.open("http://google.com");
+        Selenide.$(By.name("q")).val("selenide").pressEnter();
+        Selenide.$("#ires .g").shouldHave(Condition.text("selenide.org"));
     }
 }
 

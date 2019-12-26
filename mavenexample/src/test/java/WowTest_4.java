@@ -2,6 +2,7 @@
 
 //Открытие депонента
 
+import com.codeborne.selenide.Selenide;
 import org.junit.Test;
 import org.junit.Before;
 import org.junit.After;
@@ -24,7 +25,7 @@ import java.util.*;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Condition.*;
 
-class WowTest_4 {
+public class WowTest_4 {
     private WebDriver driver;
     private Map<String, Object> vars;
     JavascriptExecutor js;
@@ -44,7 +45,7 @@ class WowTest_4 {
         driver.manage().window().fullscreen();
 
         //Аутентификация
-        $("#submit").click ();
+        Selenide.$("#submit").click ();
 
 
 

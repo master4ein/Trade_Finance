@@ -8,6 +8,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="311" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -29,10 +32,49 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Groovy JUnit" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="groovy.util.GroovyTestCase" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/test/java/Shuffle.java" />
+    <property name="two.files.diff.last.used.folder" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Setter_java_2" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="Setter_java" />
+      <recent name="lesson_4" />
+      <recent name="package_setter_wow" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Devel\java_pft\mavenexample\src\test\java\TradeFinance" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="groovy.util.GroovyTestCase" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Devel\java_pft\mavenexample\src\test\java\com\exemple\test" />
+      <recent name="C:\Devel\java_pft\mavenexample\src\test\java\TradeFinance" />
+      <recent name="C:\Devel\java_pft\mavenexample\src\main\java" />
+      <recent name="C:\Devel\java_pft\mavenexample\src\test\java" />
+      <recent name="C:\Devel\java_pft\mavenexample\src\main" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <myKeys>
+      <visibility group="Gradle tasks" flag="false" />
+      <visibility group="Maven goals" flag="false" />
+      <visibility group="Recent projects" flag="false" />
+      <visibility group="Run configurations" flag="false" />
+    </myKeys>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -46,25 +88,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Shuffle1">
+  <component name="RunManager" selected="JUnit.Create_and_save (1)">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DrumKit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DrumKit" />
-      <module name="maven-example" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Shuffle1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Shuffle1" />
-      <module name="maven-example" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -75,30 +101,80 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CryptoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BankCreateProject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="maven-example" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CryptoTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.exemple.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.exemple.test" />
+      <option name="MAIN_CLASS_NAME" value="com.exemple.test.BankCreateProject" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Create_and_save (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="maven-example" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Test2Test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TF.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TF" />
+      <option name="MAIN_CLASS_NAME" value="TF.Create_and_save" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WowTest_4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Create_and_save" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="maven-example" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="WowTest_4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.exemple.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.exemple.test" />
+      <option name="MAIN_CLASS_NAME" value="com.exemple.test.Create_and_save" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Otziv_trebovaniya_Beneficiarom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="maven-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.exemple.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.exemple.test" />
+      <option name="MAIN_CLASS_NAME" value="com.exemple.test.Otziv_trebovaniya_Beneficiarom" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Reshenie_po_trebovaniu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="maven-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.exemple.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.exemple.test" />
+      <option name="MAIN_CLASS_NAME" value="com.exemple.test.Reshenie_po_trebovaniu" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -132,11 +208,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Shuffle1" />
-        <item itemvalue="Application.DrumKit" />
-        <item itemvalue="JUnit.WowTest_4" />
-        <item itemvalue="JUnit.CryptoTest" />
-        <item itemvalue="JUnit.Test2Test" />
+        <item itemvalue="JUnit.Create_and_save (1)" />
+        <item itemvalue="JUnit.Create_and_save" />
+        <item itemvalue="JUnit.Otziv_trebovaniya_Beneficiarom" />
+        <item itemvalue="JUnit.Reshenie_po_trebovaniu" />
+        <item itemvalue="JUnit.BankCreateProject" />
       </list>
     </recent_temporary>
   </component>
@@ -165,5 +241,13 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/maven_example$Test777.ic" NAME="Test777 Coverage Results" MODIFIED="1573822346565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>TradeFinance.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/maven_example$Setter_java_2_in_maven_example.ic" NAME="Setter_java_2 in maven-example Coverage Results" MODIFIED="1568124553097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>.*</FILTER>
+    </SUITE>
   </component>
 </project>
