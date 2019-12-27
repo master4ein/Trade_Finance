@@ -123,8 +123,8 @@ class Sign_and_Send {
         ((JavascriptExecutor) driver).executeScript("arguments[0].click()", t);*/
         //t = (new WebDriverWait(driver, )).
 
-                //Подтвердить действие   //*[@id="__BVID__329___BV_modal_footer_"]/div/button[2]/span
-                        until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("//*[@id=\"__BVID__329___BV_modal_footer_\"]/div/button[2]/span")));
+                //Подтвердить действие   //*[@id="__BVID__329___BV_modal_footer_"]/div/button[2]/span //*[@id="__BVID__329___BV_modal_footer_"]/div/button[2]/span
+                        until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"__BVID__329___BV_modal_footer_\"]/div/button[2]/span")));
         System.out.println(t);
         System.out.println(t.isEnabled());
         System.out.println(t.isDisplayed());
