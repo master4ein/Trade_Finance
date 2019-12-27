@@ -88,7 +88,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Create_and_save (1)">
+  <component name="RunManager" selected="JUnit.Sign_and_Send">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -97,38 +97,6 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BankCreateProject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="maven-example" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.exemple.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.exemple.test" />
-      <option name="MAIN_CLASS_NAME" value="com.exemple.test.BankCreateProject" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Create_and_save (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="maven-example" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TF.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="TF" />
-      <option name="MAIN_CLASS_NAME" value="TF.Create_and_save" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -143,6 +111,22 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.exemple.test" />
       <option name="MAIN_CLASS_NAME" value="com.exemple.test.Create_and_save" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Create_and_save" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="maven-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TF.Create_and_save" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TF" />
+      <option name="MAIN_CLASS_NAME" value="TF.Create_and_save" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -181,6 +165,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Sign_and_Send" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="maven-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TF.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TF" />
+      <option name="MAIN_CLASS_NAME" value="TF.Sign_and_Send" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -208,11 +208,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Sign_and_Send" />
         <item itemvalue="JUnit.Create_and_save (1)" />
         <item itemvalue="JUnit.Create_and_save" />
         <item itemvalue="JUnit.Otziv_trebovaniya_Beneficiarom" />
         <item itemvalue="JUnit.Reshenie_po_trebovaniu" />
-        <item itemvalue="JUnit.BankCreateProject" />
       </list>
     </recent_temporary>
   </component>
