@@ -88,7 +88,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Sign_and_Send">
+  <component name="RunManager" selected="JUnit.Сreate_a_draft_guarantee_and_send_it_for_signature">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -188,6 +188,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Сreate_a_draft_guarantee_and_send_it_for_signature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="maven-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TF.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TF" />
+      <option name="MAIN_CLASS_NAME" value="TF.Сreate_a_draft_guarantee_and_send_it_for_signature" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -208,8 +224,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Сreate_a_draft_guarantee_and_send_it_for_signature" />
         <item itemvalue="JUnit.Sign_and_Send" />
-        <item itemvalue="JUnit.Create_and_save (1)" />
         <item itemvalue="JUnit.Create_and_save" />
         <item itemvalue="JUnit.Otziv_trebovaniya_Beneficiarom" />
         <item itemvalue="JUnit.Reshenie_po_trebovaniu" />
