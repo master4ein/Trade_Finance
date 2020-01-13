@@ -1,15 +1,8 @@
 package TF;
 
-//Создаем заявление на гарантию под оператором Крипто-про в статусе проект и сохраняем
-
-
-
-
-
-
 import static org.junit.Assert.fail;
 
-
+//Создание на основе гарантии в статусе "Проект"
 
 import java.io.File;
 import java.util.ArrayList;
@@ -33,7 +26,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.JavascriptExecutor;
 
 
-class Create_and_save {
+
+public class Create_garantie_project {
     private WebDriver driver;
 
 
@@ -98,99 +92,23 @@ class Create_and_save {
         System.out.println(t.getText());
         //t.click();
         ((JavascriptExecutor) driver).executeScript("arguments[0].click()", t);*/
-        t = (new WebDriverWait(driver, 240)).
+        t = (new WebDriverWait(driver, 10)).
 
-                //Подать заявление
-                        until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#app > div.wrapper > div.main-panel > div.content > div > div > div > div.card > div.card-body > button > span")));
+                //Войти в заявку в статусе "Проект"
+                        until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"__BVID__181\"]/tbody/tr[3]/td[9]")));
         System.out.println(t);
         System.out.println(t.isEnabled());
         System.out.println(t.isDisplayed());
         System.out.println(t.getText());
         //t.click();
         ((JavascriptExecutor) driver).executeScript("arguments[0].click()", t);
-        Thread.sleep(3000);
-
-        //Предполагаемая дата выдачи
-        WebElement element; //292
-        element = driver.findElement(By.xpath("//*[@id=\"__BVID__293\"]"));
-        element.sendKeys("27123000");
-
-        //№ соглашения/договора о выдаче гарантии(й)
-        element = driver.findElement(By.xpath("//*[@id=\"__BVID__294\"]"));
-        element.sendKeys("777");
-
-        //Дата соглашения/договора о выдаче гарантии(й)
-        element = driver.findElement(By.xpath("//*[@id=\"__BVID__295\"]"));
-        element.sendKeys("27112019");
-        //Thread.sleep(1000);
-
-        //Вид гарантии *
-        driver.findElement(By.xpath("//*[@id=\"__BVID__300\"]/option[2]")).click();
-
-        //Гарантия обеспечивает обязательства в соответствии с: *
-        driver.findElement(By.xpath("//*[@id=\"__BVID__303\"]/option[1]")).click();
-
-        //Гарант*
-        driver.findElement(By.xpath("//*[@id=\"__BVID__305\"]/option[2]")).click();
-
-        //Бенефициар*
-        //*[@id="__BVID__278"]/option[2]
-        driver.findElement(By.xpath("//*[@id=\"__BVID__313\"]/option[4]")).click();
-
-        //Сумма гарантии (цифрами) *
-        element = driver.findElement(By.xpath("//*[@id=\"__BVID__320\"]"));
-        element.sendKeys("717");
-
-        //Валюта
-        // driver.findElement(By.xpath("//*[@id=\"__BVID__287\"]/option[3]")).click();
-
-        //Вступление гарантии в силу
-
-        //Окончание срока действия гарантии
-        element = driver.findElement(By.xpath("//*[@id=\"__BVID__328\"]"));
-        element.sendKeys("31112099");
-
-        //ОБЯЗАТЕЛЬСТВО, ИСПОЛНЕНИЕ КОТОРОГО ОБЕСПЕЧИВАЕТСЯ ГАРАНТИЕЙ
-        //Номер договора
-        element = driver.findElement(By.xpath("//*[@id=\"__BVID__330\"]"));
-        element.sendKeys("777");
-        //*[@id="__BVID__295"]
-
-        //Дата*
-        element = driver.findElement(By.xpath("//*[@id=\"__BVID__425\"]"));
-        element.sendKeys("01012019");
-
-        //Наименование договора:
-        element = driver.findElement(By.xpath("//*[@id=\"__BVID__427\"]"));
-        element.sendKeys("Договор_777");
-        //*[@id="__BVID__392"]
-
-        //Требование по гарантии должно быть представлено, начиная с
-        element = driver.findElement(By.xpath("//*[@id=\"__BVID__349\"]"));
-        element.sendKeys("Событие_777");
-
-        //СРОК РАССМОТРЕНИЯ ТРЕБОВАНИЯ И ПРИЛОЖЕННЫХ К НЕМУ ДОКУМЕНТОВ
-        element = driver.findElement(By.xpath("//*[@id=\"__BVID__351\"]"));
-        element.sendKeys("7");
-
-        //ПОДСУДНОСТЬ
-        driver.findElement(By.xpath("//*[@id=\"__BVID__372\"]/option[2]")).click(); //*[@id="__BVID__339"]/option[2]
         t = (new WebDriverWait(driver, 10)).
+        //Thread.sleep(3000);
 
 
-                //Сохранить заявление
+                //Создать на основе
 
-                        until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/form/div[68]/button[2]/span")));
-        System.out.println(t);
-        System.out.println(t.isEnabled());
-        System.out.println(t.isDisplayed());
-        System.out.println(t.getText());
-        t.click();
-        ((JavascriptExecutor) driver).executeScript("arguments[0].click()", t);
-                t = (new WebDriverWait(driver, 80)).
-
-                //Отправить на подпись
-        until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/div[10]/button[4]/span")));
+                        until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/div[10]/button[5]/span")));
         System.out.println(t);
         System.out.println(t.isEnabled());
         System.out.println(t.isDisplayed());
@@ -200,20 +118,36 @@ class Create_and_save {
         t = (new WebDriverWait(driver, 10)).
 
                 //Подтвердить действие
-          until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"__BVID__586___BV_modal_footer_\"]/div/button[2]/span")));
+                        until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"__BVID__363___BV_modal_footer_\"]/div/button[2]/span")));
         System.out.println(t);
         System.out.println(t.isEnabled());
         System.out.println(t.isDisplayed());
         System.out.println(t.getText());
         t.click();
         ((JavascriptExecutor) driver).executeScript("arguments[0].click()", t);
-        Thread.sleep(80000);
-        //t = (new WebDriverWait(driver, 1)).
+       // t = (new WebDriverWait(driver, 10)).
+                Thread.sleep(3000);
 
+                //Предполагаемая дата выдачи
+                WebElement element;
+        element = driver.findElement(By.xpath("//*[@id=\"__BVID__467\"]"));
+        element.sendKeys("27123000");
 
+        //Окончание срока действия гарантии
+        element = driver.findElement(By.xpath("//*[@id=\"__BVID__502\"]"));
+        element.sendKeys("27123003");
+        t = (new WebDriverWait(driver, 10)).
 
-        //*[@id="__BVID__585___BV_modal_footer_"]/div/button[2]/span
-//*[@id="app"]/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/div[10]/button[4]/span
+        //Сохранить заявление
+        until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/form/div[68]/button[2]/span")));
+        System.out.println(t);
+        System.out.println(t.isEnabled());
+        System.out.println(t.isDisplayed());
+        System.out.println(t.getText());
+        t.click();
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click()", t);
+        Thread.sleep(3000);
+
 
     }
 
