@@ -8,14 +8,15 @@ package TF;
 
 
 import static org.junit.Assert.fail;
-
+import static org.openqa.selenium.By.*;
 
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.List;
 
 
-
+import com.google.gson.internal.$Gson$Types;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -31,7 +32,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.JavascriptExecutor;
-
+import org.openqa.selenium.WebElement.*;
 
 class Create_and_save {
     private WebDriver driver;
@@ -54,7 +55,7 @@ class Create_and_save {
 
         WebElement t = (new WebDriverWait(driver, 30)).
 
-                until(ExpectedConditions.presenceOfElementLocated(By.tagName("button")));
+                until(ExpectedConditions.presenceOfElementLocated(tagName("button")));
 
         ((JavascriptExecutor) driver).executeScript("arguments[0].click()", t);
 
@@ -68,7 +69,7 @@ class Create_and_save {
 
                 //Кликнуть кнопку "Выбрать"
 
-                        until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"__BVID__90___BV_modal_body_\"]/div[2]/button/span")));
+                        until(ExpectedConditions.presenceOfElementLocated(xpath("//*[@id=\"__BVID__90___BV_modal_body_\"]/div[2]/button/span")));
         System.out.println(t);
         System.out.println(t.isEnabled());
         System.out.println(t.isDisplayed());
@@ -80,7 +81,7 @@ class Create_and_save {
 
                 //Кликнуть войти в систему
                 //*[@id="__BVID__34___BV_modal_body_"]/div[2]/button[2]/span
-                        until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"__BVID__34___BV_modal_body_\"]/div[2]/button[2]/span")));
+                        until(ExpectedConditions.presenceOfElementLocated(xpath("//*[@id=\"__BVID__34___BV_modal_body_\"]/div[2]/button[2]/span")));
         System.out.println(t);
         System.out.println(t.isEnabled());
         System.out.println(t.isDisplayed());
@@ -101,7 +102,7 @@ class Create_and_save {
         t = (new WebDriverWait(driver, 240)).
 
                 //Подать заявление
-                        until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#app > div.wrapper > div.main-panel > div.content > div > div > div > div.card > div.card-body > button > span")));
+                        until(ExpectedConditions.presenceOfElementLocated(cssSelector("#app > div.wrapper > div.main-panel > div.content > div > div > div > div.card > div.card-body > button > span")));
         System.out.println(t);
         System.out.println(t.isEnabled());
         System.out.println(t.isDisplayed());
@@ -111,35 +112,53 @@ class Create_and_save {
         Thread.sleep(3000);
 
         //Предполагаемая дата выдачи
-        WebElement element; //292
-        element = driver.findElement(By.xpath("//*[@id=\"__BVID__293\"]"));
-        element.sendKeys("27123000");
+
+        WebElement element_form;
+        WebElement element_cell;
+        WebElement element;
+        List<WebElement> element_list, element_list2;
+        element_form = driver.findElement(tagName("form"));
+
+        element_list = element_form.findElements(tagName("input"));
+        element_list2 = element_form.findElements(tagName("select"));
+
+        element = element_list.get(2);
+        element.sendKeys("15012020");
+
 
         //№ соглашения/договора о выдаче гарантии(й)
-        element = driver.findElement(By.xpath("//*[@id=\"__BVID__294\"]"));
-        element.sendKeys("777");
+        element = element_list.get(3);
+        element.sendKeys("333");
 
         //Дата соглашения/договора о выдаче гарантии(й)
-        element = driver.findElement(By.xpath("//*[@id=\"__BVID__295\"]"));
-        element.sendKeys("27112019");
-        //Thread.sleep(1000);
+        element = element_list.get(4);
+        element.sendKeys("15012020");
 
         //Вид гарантии *
-        driver.findElement(By.xpath("//*[@id=\"__BVID__300\"]/option[2]")).click();
+        element = element_list2.get(0);
+        element.findElement(ByTagName(By.className()));
+        driver.findElement(tagName("select"));
+
+        element.click();
+
+
+        //  element.findElement(className("form-control custom-select is-invalid"));
+       // element.findElement(name("advance")).click();
+
 
         //Гарантия обеспечивает обязательства в соответствии с: *
-        driver.findElement(By.xpath("//*[@id=\"__BVID__303\"]/option[1]")).click();
+        driver.findElement(xpath("//*[@id=\"__BVID__303\"]/option[1]")).click();
 
         //Гарант*
-        driver.findElement(By.xpath("//*[@id=\"__BVID__305\"]/option[2]")).click();
+        driver.findElement(xpath("//*[@id=\"__BVID__305\"]/option[2]")).click();
 
         //Бенефициар*
         //*[@id="__BVID__278"]/option[2]
-        driver.findElement(By.xpath("//*[@id=\"__BVID__313\"]/option[4]")).click();
+        driver.findElement(xpath("//*[@id=\"__BVID__313\"]/option[4]")).click();
 
         //Сумма гарантии (цифрами) *
-        element = driver.findElement(By.xpath("//*[@id=\"__BVID__320\"]"));
-        element.sendKeys("717");
+        element = driver.findElement(xpath("//*[@id=\"__BVID__320\"]"));
+        element.sendKeys("202");
 
         //Валюта
         // driver.findElement(By.xpath("//*[@id=\"__BVID__287\"]/option[3]")).click();
@@ -147,40 +166,40 @@ class Create_and_save {
         //Вступление гарантии в силу
 
         //Окончание срока действия гарантии
-        element = driver.findElement(By.xpath("//*[@id=\"__BVID__328\"]"));
+        element = driver.findElement(xpath("//*[@id=\"__BVID__328\"]"));
         element.sendKeys("31112099");
 
         //ОБЯЗАТЕЛЬСТВО, ИСПОЛНЕНИЕ КОТОРОГО ОБЕСПЕЧИВАЕТСЯ ГАРАНТИЕЙ
         //Номер договора
-        element = driver.findElement(By.xpath("//*[@id=\"__BVID__330\"]"));
+        element = driver.findElement(xpath("//*[@id=\"__BVID__330\"]"));
         element.sendKeys("777");
         //*[@id="__BVID__295"]
 
         //Дата*
-        element = driver.findElement(By.xpath("//*[@id=\"__BVID__425\"]"));
+        element = driver.findElement(xpath("//*[@id=\"__BVID__425\"]"));
         element.sendKeys("01012019");
 
         //Наименование договора:
-        element = driver.findElement(By.xpath("//*[@id=\"__BVID__427\"]"));
+        element = driver.findElement(xpath("//*[@id=\"__BVID__427\"]"));
         element.sendKeys("Договор_777");
         //*[@id="__BVID__392"]
 
         //Требование по гарантии должно быть представлено, начиная с
-        element = driver.findElement(By.xpath("//*[@id=\"__BVID__349\"]"));
+        element = driver.findElement(xpath("//*[@id=\"__BVID__349\"]"));
         element.sendKeys("Событие_777");
 
         //СРОК РАССМОТРЕНИЯ ТРЕБОВАНИЯ И ПРИЛОЖЕННЫХ К НЕМУ ДОКУМЕНТОВ
-        element = driver.findElement(By.xpath("//*[@id=\"__BVID__351\"]"));
+        element = driver.findElement(xpath("//*[@id=\"__BVID__351\"]"));
         element.sendKeys("7");
 
         //ПОДСУДНОСТЬ
-        driver.findElement(By.xpath("//*[@id=\"__BVID__372\"]/option[2]")).click(); //*[@id="__BVID__339"]/option[2]
+        driver.findElement(xpath("//*[@id=\"__BVID__372\"]/option[2]")).click(); //*[@id="__BVID__339"]/option[2]
         t = (new WebDriverWait(driver, 10)).
 
 
                 //Сохранить заявление
 
-                        until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/form/div[68]/button[2]/span")));
+                        until(ExpectedConditions.presenceOfElementLocated(xpath("//*[@id=\"app\"]/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/form/div[68]/button[2]/span")));
         System.out.println(t);
         System.out.println(t.isEnabled());
         System.out.println(t.isDisplayed());
@@ -190,7 +209,7 @@ class Create_and_save {
                 t = (new WebDriverWait(driver, 80)).
 
                 //Отправить на подпись
-        until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/div[10]/button[4]/span")));
+        until(ExpectedConditions.presenceOfElementLocated(xpath("//*[@id=\"app\"]/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/div[10]/button[4]/span")));
         System.out.println(t);
         System.out.println(t.isEnabled());
         System.out.println(t.isDisplayed());
@@ -200,7 +219,7 @@ class Create_and_save {
         t = (new WebDriverWait(driver, 10)).
 
                 //Подтвердить действие
-          until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"__BVID__586___BV_modal_footer_\"]/div/button[2]/span")));
+          until(ExpectedConditions.presenceOfElementLocated(xpath("//*[@id=\"__BVID__586___BV_modal_footer_\"]/div/button[2]/span")));
         System.out.println(t);
         System.out.println(t.isEnabled());
         System.out.println(t.isDisplayed());
