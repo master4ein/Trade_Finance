@@ -13,3 +13,14 @@ gradle-app.setting
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
 # gradle/wrapper/gradle-wrapper.properties
 .idea/workspace.xml
+coolbox/src/main/java/MyFirstJavaProgram.java
+coolbox/gradle/wrapper/gradle-wrapper.properties
+coolbox/build.gradle
+.idea/vcs.xml
+.idea/modules/coolbox.iml
+.idea/modules.xml
+.idea/misc.xml
+.idea/libraries/Gradle__joda_time_joda_time_2_2.xml
+.idea/gradle.xml
+.idea/compiler.xml
+.idea/libraries/Gradle__joda_time_joda_time_2_2.xml

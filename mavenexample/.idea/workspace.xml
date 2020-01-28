@@ -8,12 +8,23 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="311" />
+    <option name="myElementSize" value="327" />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="autoscrollToSource" value="true" />
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="maven-example" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit3 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -25,31 +36,48 @@
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="lookForNested" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectId" id="1Q8nRVuoBpclFDh0fuP5W3eYVyp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Groovy JUnit" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="groovy.util.GroovyTestCase" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="TF.Create_and_Save" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/com/exemple/test" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="project.structure.side.proportion" value="0.58189654" />
+    <property name="service.view.auto.scroll.to.source" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.ignored.files" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/test/java/Shuffle.java" />
     <property name="two.files.diff.last.used.folder" value="$PROJECT_DIR$/.." />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="TradeFinance" />
+      <recent name="TF" />
       <recent name="Setter_java_2" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
+      <recent name="junit.framework.TestCase" />
+      <recent name="TF.Create_and_Save" />
       <recent name="groovy.util.GroovyTestCase" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="Setter_java" />
+      <recent name="lesson_4" />
+      <recent name="package_setter_wow" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Devel\java_pft\mavenexample\src\test\java\com\exemple\test" />
@@ -58,28 +86,31 @@
       <recent name="C:\Devel\java_pft\mavenexample\src\test\java" />
       <recent name="C:\Devel\java_pft\mavenexample\src\main" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-      <recent name="Setter_java" />
-      <recent name="lesson_4" />
-      <recent name="package_setter_wow" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Devel\java_pft\mavenexample\src\test\java\TradeFinance" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="TradeFinance" />
       <recent name="TF" />
     </key>
   </component>
   <component name="RunAnythingCache">
     <myKeys>
       <visibility group="Gradle tasks" flag="false" />
-      <visibility group="Maven goals" flag="false" />
-      <visibility group="Recent projects" flag="false" />
-      <visibility group="Run configurations" flag="false" />
+      <visibility group="Maven goals" flag="true" />
+      <visibility group="Recent projects" flag="true" />
+      <visibility group="Run configurations" flag="true" />
     </myKeys>
+    <option name="myCommands">
+      <command value="mvn " />
+    </option>
   </component>
   <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MavenRunConfiguration" />
+      </set>
+    </option>
     <option name="ruleStates">
       <list>
         <RuleState>
@@ -91,9 +122,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Create_and_save (1)">
+  <component name="RunManager" selected="JUnit.Create_and_Save_S1">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WowTest_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WowTest_1" />
+      <module name="maven-example" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -104,55 +143,84 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Bank_guarantee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Aut_Oper_CrPro" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="maven-example" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="TF.*" />
+          <option name="PATTERN" value="com.exemple.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="TF" />
-      <option name="MAIN_CLASS_NAME" value="TF.Bank_guarantee" />
+      <option name="PACKAGE_NAME" value="com.exemple.test" />
+      <option name="MAIN_CLASS_NAME" value="com.exemple.test.Aut_Oper_CrPro" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Create_and_save (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Authorization" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="maven-example" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TF.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="TF" />
-      <option name="MAIN_CLASS_NAME" value="TF.Create_and_save" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Authorization" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Create_garantie_project" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Create_and_Save_S1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="maven-example" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="TF.*" />
+          <option name="PATTERN" value="com.exemple.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="TF" />
-      <option name="MAIN_CLASS_NAME" value="TF.Create_garantie_project" />
+      <option name="PACKAGE_NAME" value="com.exemple.test" />
+      <option name="MAIN_CLASS_NAME" value="com.exemple.test.Create_and_Save_S1" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Create_garantie_project_sign" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Create_and_Save_S1.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="maven-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.exemple.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.exemple.test" />
+      <option name="MAIN_CLASS_NAME" value="com.exemple.test.Create_and_Save_S1" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Create_and_save " type="JUnit" factoryName="JUnit">
+      <module name="maven-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TradeFinance.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TradeFinance" />
+      <option name="MAIN_CLASS_NAME" value="TradeFinance.Create_and_save" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Create_and_save" type="JUnit" factoryName="JUnit" folderName="New Folder">
       <module name="maven-example" />
       <extension name="coverage">
         <pattern>
@@ -160,8 +228,42 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="TF" />
-      <option name="MAIN_CLASS_NAME" value="TF.Create_garantie_project_sign" />
+      <option name="PACKAGE_NAME" value="com.exemple.test" />
+      <option name="MAIN_CLASS_NAME" value="com.exemple.test.Test_TF" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Create_and_save" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="maven-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.exemple.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.exemple.test" />
+      <option name="MAIN_CLASS_NAME" value="com.exemple.test.Create_and_save" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SendForSignature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="maven-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.exemple.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.exemple.test" />
+      <option name="MAIN_CLASS_NAME" value="com.exemple.test.SendForSignature" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -175,21 +277,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Сreate_a_draft_guarantee_and_send_it_for_signature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="maven-example" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TF.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="TF" />
-      <option name="MAIN_CLASS_NAME" value="TF.Сreate_a_draft_guarantee_and_send_it_for_signature" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="maven-example " type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
     </configuration>
     <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
@@ -209,15 +341,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.WowTest_1" />
+      <item itemvalue="JUnit.Create_and_save" />
+      <item itemvalue="JUnit.Authorization" />
+      <item itemvalue="JUnit.Create_and_save " />
+      <item itemvalue="JUnit.Aut_Oper_CrPro" />
+      <item itemvalue="JUnit.SendForSignature" />
+      <item itemvalue="JUnit.Create_and_Save_S1" />
+      <item itemvalue="JUnit.Create_and_Save_S1.test" />
+      <item itemvalue="Maven.maven-example " />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Create_and_save (1)" />
-        <item itemvalue="JUnit.Create_garantie_project_sign" />
-        <item itemvalue="JUnit.Create_garantie_project" />
-        <item itemvalue="JUnit.Bank_guarantee" />
-        <item itemvalue="JUnit.Сreate_a_draft_guarantee_and_send_it_for_signature" />
+        <item itemvalue="JUnit.Create_and_Save_S1" />
+        <item itemvalue="JUnit.Create_and_Save_S1.test" />
+        <item itemvalue="JUnit.SendForSignature" />
+        <item itemvalue="Application.WowTest_1" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@7cb473f0" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@7cb473f0" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@df132c7f" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -245,12 +407,30 @@
       </map>
     </option>
   </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myShow1" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/maven_example$Proverka_maven_test.ic" NAME="Proverka_maven.test Coverage Results" MODIFIED="1579692635687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.exemple.test.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/maven_example$Create_and_save_.ic" NAME="Create_and_save  Coverage Results" MODIFIED="1579250504215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>TF.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/maven_example$CaS.ic" NAME="CaS Coverage Results" MODIFIED="1579276129127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>TF.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/maven_example$Test777.ic" NAME="Test777 Coverage Results" MODIFIED="1573822346565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>TradeFinance.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/maven_example$Setter_java_2_in_maven_example.ic" NAME="Setter_java_2 in maven-example Coverage Results" MODIFIED="1568124553097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/maven_example$Create_and_save_java_.ic" NAME="Create_and_save.java  Coverage Results" MODIFIED="1579250555228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>TF.*</FILTER>
     </SUITE>
   </component>
 </project>

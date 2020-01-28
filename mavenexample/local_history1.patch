@@ -1,0 +1,816 @@
+Index: src/test/java/TF/TF.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/java/TF/TF.iml	(date 1579280259199)
++++ src/test/java/TF/TF.iml	(date 1579280259199)
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4" />
+\ No newline at end of file
+Index: src/test/java/TF/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/java/TF/pom.xml	(date 1579279647009)
++++ src/test/java/TF/pom.xml	(date 1579279647009)
+@@ -0,0 +1,12 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <groupId>1</groupId>
++    <artifactId>1</artifactId>
++    <version>1.0-SNAPSHOT</version>
++
++
++</project>
+\ No newline at end of file
+Index: src/test/java/TF/Test1.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/java/TF/Test1.java	(date 1579278617678)
++++ src/test/java/TF/Test1.java	(date 1579278617678)
+@@ -0,0 +1,4 @@
++package TF;
++
++class Test1 {
++}
+Index: src/test/java/TF/.idea/.name
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/java/TF/.idea/.name	(date 1579280259167)
++++ src/test/java/TF/.idea/.name	(date 1579280259167)
+@@ -0,0 +1,1 @@
++Maven
+\ No newline at end of file
+Index: src/test/java/TF/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/java/TF/.idea/vcs.xml	(date 1579280739825)
++++ src/test/java/TF/.idea/vcs.xml	(date 1579280739825)
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/../../../../.." vcs="Git" />
++    <mapping directory="$PROJECT_DIR$" vcs="" />
++  </component>
++</project>
+\ No newline at end of file
+Index: src/test/java/TF/.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/java/TF/.idea/misc.xml	(date 1579282366762)
++++ src/test/java/TF/.idea/misc.xml	(date 1579282366762)
+@@ -0,0 +1,15 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ExternalStorageConfigurationManager" enabled="true" />
++  <component name="MavenProjectsManager">
++    <option name="originalFiles">
++      <list>
++        <option value="$PROJECT_DIR$/pom.xml" />
++        <option value="$PROJECT_DIR$/../../../../pom.xml" />
++      </list>
++    </option>
++  </component>
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/src/test/java" />
++  </component>
++</project>
+\ No newline at end of file
+Index: src/test/java/TF/.idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/java/TF/.idea/compiler.xml	(date 1579285571481)
++++ src/test/java/TF/.idea/compiler.xml	(date 1579285571481)
+@@ -0,0 +1,14 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="CompilerConfiguration">
++    <annotationProcessing>
++      <profile name="Maven default annotation processors profile" enabled="true">
++        <sourceOutputDir name="target/generated-sources/annotations" />
++        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
++        <outputRelativeToContentRoot value="true" />
++        <module name="TF" />
++        <module name="maven-example" />
++      </profile>
++    </annotationProcessing>
++  </component>
++</project>
+\ No newline at end of file
+Index: src/test/java/TF/Create_and_save.java
+===================================================================
+--- src/test/java/TF/Create_and_save.java	(date 0)
++++ src/test/java/TF/Create_and_save.java	(date 0)
+@@ -1,259 +0,0 @@
+-package TF;
+-
+-//Создаем заявление на гарантию под оператором Крипто-про в статусе проект и сохраняем
+-
+-
+-
+-
+-
+-
+-import static org.junit.Assert.fail;
+-import static org.openqa.selenium.By.*;
+-
+-
+-import java.io.File;
+-import java.util.ArrayList;
+-import java.util.List;
+-
+-
+-import com.google.gson.internal.$Gson$Types;
+-import org.junit.jupiter.api.AfterEach;
+-import org.junit.jupiter.api.BeforeEach;
+-import org.junit.jupiter.api.Test;
+-import org.junit.jupiter.engine.script.Script;
+-import org.junit.jupiter.params.provider.Arguments;
+-import org.openqa.selenium.By;
+-import org.openqa.selenium.Dimension;
+-import org.openqa.selenium.WebDriver;
+-import org.openqa.selenium.WebElement;
+-import org.openqa.selenium.ie.InternetExplorerDriver;
+-import org.openqa.selenium.chrome.ChromeDriver;
+-import org.openqa.selenium.chrome.ChromeOptions;
+-import org.openqa.selenium.support.ui.ExpectedConditions;
+-import org.openqa.selenium.support.ui.WebDriverWait;
+-import org.openqa.selenium.JavascriptExecutor;
+-import org.openqa.selenium.WebElement.*;
+-
+-class Create_and_save {
+-    private WebDriver driver;
+-
+-
+-    @BeforeEach
+-    void setUp() throws Exception {
+-
+-        ChromeOptions options = new ChromeOptions();
+-        options.addArguments("--user-data-dir=C:\\Users\\YD052CKF\\AppData\\Local\\Google\\Chrome\\User Data");
+-        options.addArguments("--profile-directory=Profile");
+-
+-        options.addExtensions(new File("C:\\Users\\YD052CKF\\Extensions\\1.2.7_1.crx"));
+-
+-        driver = new ChromeDriver(options);
+-        driver.get("http://46.182.25.137/v1/#/login");
+-        Thread.sleep(5000);
+-
+-        //Выбираем сертификат(крипто-про оператор по умолчанию)
+-
+-        WebElement t = (new WebDriverWait(driver, 30)).
+-
+-                until(ExpectedConditions.presenceOfElementLocated(tagName("button")));
+-
+-        ((JavascriptExecutor) driver).executeScript("arguments[0].click()", t);
+-
+-        //((JavascriptExecutor) driver).executeScript("arguments[0].click()",
+-        //                                                driver.findElement(By.tagName("button")));
+-        //Thread.sleep(3000);
+-        //t = driver.findElement(By.className("btn-success"));
+-        t = (new WebDriverWait(driver, 3)).
+-
+-
+-
+-                //Кликнуть кнопку "Выбрать"
+-
+-                        until(ExpectedConditions.presenceOfElementLocated(xpath("//*[@id=\"__BVID__90___BV_modal_body_\"]/div[2]/button/span")));
+-        System.out.println(t);
+-        System.out.println(t.isEnabled());
+-        System.out.println(t.isDisplayed());
+-        System.out.println(t.getText());
+-        //t.click();
+-        ((JavascriptExecutor) driver).executeScript("arguments[0].click()", t);
+-        t = (new WebDriverWait(driver, 10)).
+-
+-
+-                //Кликнуть войти в систему
+-                //*[@id="__BVID__34___BV_modal_body_"]/div[2]/button[2]/span
+-                        until(ExpectedConditions.presenceOfElementLocated(xpath("//*[@id=\"__BVID__34___BV_modal_body_\"]/div[2]/button[2]/span")));
+-        System.out.println(t);
+-        System.out.println(t.isEnabled());
+-        System.out.println(t.isDisplayed());
+-        System.out.println(t.getText());
+-        //t.click();
+-        ((JavascriptExecutor) driver).executeScript("arguments[0].click()", t);
+-        Thread.sleep(50000);
+-        //t = (new WebDriverWait(driver, 10));
+-
+-                /*Обходим ошибку
+-                        until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#__BVID__150___BV_modal_footer_ > div > button")));
+-        System.out.println(t);
+-        System.out.println(t.isEnabled());
+-        System.out.println(t.isDisplayed());
+-        System.out.println(t.getText());
+-        //t.click();
+-        ((JavascriptExecutor) driver).executeScript("arguments[0].click()", t);*/
+-        t = (new WebDriverWait(driver, 240)).
+-
+-                //Подать заявление
+-                        until(ExpectedConditions.presenceOfElementLocated(cssSelector("#app > div.wrapper > div.main-panel > div.content > div > div > div > div.card > div.card-body > button > span")));
+-        System.out.println(t);
+-        System.out.println(t.isEnabled());
+-        System.out.println(t.isDisplayed());
+-        System.out.println(t.getText());
+-        //t.click();
+-        ((JavascriptExecutor) driver).executeScript("arguments[0].click()", t);
+-        Thread.sleep(3000);
+-
+-        //Предполагаемая дата выдачи
+-
+-        WebElement element_form;
+-        WebElement element_cell;
+-        WebElement element;
+-        List<WebElement> element_list, element_list2, element_list3;
+-        element_form = driver.findElement(tagName("form"));
+-        element_options = driver.findElement(tagName("options"));
+-
+-
+-        element_list = element_form.findElements(tagName("input"));
+-        element_list2 = element_form.findElements(tagName("select"));
+-        element_list3 = element_form.findElements(tagName("options"));
+-
+-
+-
+-        element = element_list.get(2);
+-        element.sendKeys("15012020");
+-
+-
+-        //№ соглашения/договора о выдаче гарантии(й)
+-        element = element_list.get(3);
+-        element.sendKeys("333");
+-
+-        //Дата соглашения/договора о выдаче гарантии(й)
+-        element = element_list.get(4);
+-        element.sendKeys("15012020");
+-
+-        //Вид гарантии *
+-        element = element_list2.get(0);
+-        element.findElement();
+-
+-        element.click();
+-
+-
+-        //  element.findElement(className("form-control custom-select is-invalid"));
+-       // element.findElement(name("advance")).click();
+-
+-
+-        //Гарантия обеспечивает обязательства в соответствии с: *
+-        driver.findElement(xpath("//*[@id=\"__BVID__303\"]/option[1]")).click();
+-
+-        //Гарант*
+-        driver.findElement(xpath("//*[@id=\"__BVID__305\"]/option[2]")).click();
+-
+-        //Бенефициар*
+-        //*[@id="__BVID__278"]/option[2]
+-        driver.findElement(xpath("//*[@id=\"__BVID__313\"]/option[4]")).click();
+-
+-        //Сумма гарантии (цифрами) *
+-        element = driver.findElement(xpath("//*[@id=\"__BVID__320\"]"));
+-        element.sendKeys("202");
+-
+-        //Валюта
+-        // driver.findElement(By.xpath("//*[@id=\"__BVID__287\"]/option[3]")).click();
+-
+-        //Вступление гарантии в силу
+-
+-        //Окончание срока действия гарантии
+-        element = driver.findElement(xpath("//*[@id=\"__BVID__328\"]"));
+-        element.sendKeys("31112099");
+-
+-        //ОБЯЗАТЕЛЬСТВО, ИСПОЛНЕНИЕ КОТОРОГО ОБЕСПЕЧИВАЕТСЯ ГАРАНТИЕЙ
+-        //Номер договора
+-        element = driver.findElement(xpath("//*[@id=\"__BVID__330\"]"));
+-        element.sendKeys("777");
+-        //*[@id="__BVID__295"]
+-
+-        //Дата*
+-        element = driver.findElement(xpath("//*[@id=\"__BVID__425\"]"));
+-        element.sendKeys("01012019");
+-
+-        //Наименование договора:
+-        element = driver.findElement(xpath("//*[@id=\"__BVID__427\"]"));
+-        element.sendKeys("Договор_777");
+-        //*[@id="__BVID__392"]
+-
+-        //Требование по гарантии должно быть представлено, начиная с
+-        element = driver.findElement(xpath("//*[@id=\"__BVID__349\"]"));
+-        element.sendKeys("Событие_777");
+-
+-        //СРОК РАССМОТРЕНИЯ ТРЕБОВАНИЯ И ПРИЛОЖЕННЫХ К НЕМУ ДОКУМЕНТОВ
+-        element = driver.findElement(xpath("//*[@id=\"__BVID__351\"]"));
+-        element.sendKeys("7");
+-
+-        //ПОДСУДНОСТЬ
+-        driver.findElement(xpath("//*[@id=\"__BVID__372\"]/option[2]")).click(); //*[@id="__BVID__339"]/option[2]
+-        t = (new WebDriverWait(driver, 10)).
+-
+-
+-                //Сохранить заявление
+-
+-                        until(ExpectedConditions.presenceOfElementLocated(xpath("//*[@id=\"app\"]/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/form/div[68]/button[2]/span")));
+-        System.out.println(t);
+-        System.out.println(t.isEnabled());
+-        System.out.println(t.isDisplayed());
+-        System.out.println(t.getText());
+-        t.click();
+-        ((JavascriptExecutor) driver).executeScript("arguments[0].click()", t);
+-                t = (new WebDriverWait(driver, 80)).
+-
+-                //Отправить на подпись
+-        until(ExpectedConditions.presenceOfElementLocated(xpath("//*[@id=\"app\"]/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/div[10]/button[4]/span")));
+-        System.out.println(t);
+-        System.out.println(t.isEnabled());
+-        System.out.println(t.isDisplayed());
+-        System.out.println(t.getText());
+-        t.click();
+-        ((JavascriptExecutor) driver).executeScript("arguments[0].click()", t);
+-        t = (new WebDriverWait(driver, 10)).
+-
+-                //Подтвердить действие
+-          until(ExpectedConditions.presenceOfElementLocated(xpath("//*[@id=\"__BVID__586___BV_modal_footer_\"]/div/button[2]/span")));
+-        System.out.println(t);
+-        System.out.println(t.isEnabled());
+-        System.out.println(t.isDisplayed());
+-        System.out.println(t.getText());
+-        t.click();
+-        ((JavascriptExecutor) driver).executeScript("arguments[0].click()", t);
+-        Thread.sleep(80000);
+-        //t = (new WebDriverWait(driver, 1)).
+-
+-
+-
+-        //*[@id="__BVID__585___BV_modal_footer_"]/div/button[2]/span
+-//*[@id="app"]/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/div[10]/button[4]/span
+-
+-    }
+-
+-
+-
+-    @AfterEach
+-    void tearDown() throws Exception {
+-        //driver.close();
+-    }
+-
+-
+-
+-    @Test
+-    void test() {
+-
+-    }
+-
+-
+-
+-}
+\ No newline at end of file
+Index: src/test/java/com/exemple/test/Create_and_save.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/java/com/exemple/test/Create_and_save.java	(date 1579289407531)
++++ src/test/java/com/exemple/test/Create_and_save.java	(date 1579289407531)
+@@ -5,30 +5,19 @@
+ 
+ 
+ 
+-import static org.junit.Assert.fail;
+-
+-
+-
+-import java.io.File;
+-import java.util.ArrayList;
+-
+-
+-
+ import org.junit.jupiter.api.AfterEach;
+ import org.junit.jupiter.api.BeforeEach;
+ import org.junit.jupiter.api.Test;
+-import org.junit.jupiter.engine.script.Script;
+-import org.junit.jupiter.params.provider.Arguments;
+ import org.openqa.selenium.By;
+-import org.openqa.selenium.Dimension;
++import org.openqa.selenium.JavascriptExecutor;
+ import org.openqa.selenium.WebDriver;
+ import org.openqa.selenium.WebElement;
+-import org.openqa.selenium.ie.InternetExplorerDriver;
+ import org.openqa.selenium.chrome.ChromeDriver;
+ import org.openqa.selenium.chrome.ChromeOptions;
+ import org.openqa.selenium.support.ui.ExpectedConditions;
+ import org.openqa.selenium.support.ui.WebDriverWait;
+-import org.openqa.selenium.JavascriptExecutor;
++
++import java.io.File;
+ 
+ 
+ class Create_and_save {
+Index: src/test/java/Bank_1.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/java/Bank_1.java	(date 1579283784691)
++++ src/test/java/Bank_1.java	(date 1579283784691)
+@@ -0,0 +1,2 @@
++public class Bank_1 {
++}
+Index: src/test/java/TradeFinance/Test333.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/java/TradeFinance/Test333.java	(date 1579280316296)
++++ src/test/java/TradeFinance/Test333.java	(date 1579280316296)
+@@ -0,0 +1,25 @@
++import static org.junit.Assert.fail;
++import static org.openqa.selenium.By.*;
++
++
++import java.io.File;
++import java.util.ArrayList;
++import java.util.List;
++
++
++import com.google.gson.internal.$Gson$Types;
++import org.junit.jupiter.api.AfterEach;
++import org.junit.jupiter.api.BeforeEach;
++import org.junit.jupiter.api.Test;
++import org.junit.jupiter.engine.script.Script;
++import org.junit.jupiter.params.provider.Arguments;
++import org.openqa.selenium.By;
++import org.openqa.selenium.Dimension;
++import org.openqa.selenium.WebDriver;
++import org.openqa.selenium.WebElement;
++import org.openqa.selenium.ie.InternetExplorerDriver;
++import org.openqa.selenium.chrome.ChromeDriver;
++import org.openqa.selenium.chrome.ChromeOptions;
++import org.openqa.selenium.support.ui.ExpectedConditions;
++import org.openqa.selenium.support.ui.WebDriverWait;
++import org.openqa.selenium.JavascriptExecutor;
+Index: src/test/java/TradeFinance/Create_and_save.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/java/TradeFinance/Create_and_save.java	(date 1579608629994)
++++ src/test/java/TradeFinance/Create_and_save.java	(date 1579608629994)
+@@ -0,0 +1,129 @@
++package TradeFinance;
++
++
++import org.junit.jupiter.api.BeforeEach;
++import org.openqa.selenium.JavascriptExecutor;
++import org.openqa.selenium.WebDriver;
++import org.openqa.selenium.WebElement;
++import org.openqa.selenium.chrome.ChromeDriver;
++import org.openqa.selenium.chrome.ChromeOptions;
++import org.openqa.selenium.support.ui.ExpectedConditions;
++import org.openqa.selenium.support.ui.WebDriverWait;
++
++import java.io.File;
++import java.util.List;
++
++import static org.openqa.selenium.By.*;
++
++class Create_and_save {
++    private WebDriver driver;
++
++
++    @BeforeEach
++    void setUp() throws Exception {
++
++        ChromeOptions options = new ChromeOptions();
++        options.addArguments("--user-data-dir=C:\\Users\\YD052CKF\\AppData\\Local\\Google\\Chrome\\User Data");
++        options.addArguments("--profile-directory=Profile");
++
++        options.addExtensions(new File("C:\\Users\\YD052CKF\\Extensions\\1.2.7_1.crx"));
++
++        driver = new ChromeDriver(options);
++        driver.get("http://46.182.25.137/v1/#/login");
++        Thread.sleep(5000);
++
++        //Выбираем сертификат(крипто-про оператор по умолчанию)
++
++        WebElement t = (new WebDriverWait(driver, 30)).
++
++                until(ExpectedConditions.presenceOfElementLocated(tagName("button")));
++
++        ((JavascriptExecutor) driver).executeScript("arguments[0].click()", t);
++
++        //((JavascriptExecutor) driver).executeScript("arguments[0].click()",
++        //                                                driver.findElement(By.tagName("button")));
++        //Thread.sleep(3000);
++        //t = driver.findElement(By.className("btn-success"));
++        t = (new WebDriverWait(driver, 3)).
++
++
++                //Кликнуть кнопку "Выбрать"
++
++                        until(ExpectedConditions.presenceOfElementLocated(xpath("//*[@id=\"__BVID__90___BV_modal_body_\"]/div[2]/button/span")));
++        System.out.println(t);
++        System.out.println(t.isEnabled());
++        System.out.println(t.isDisplayed());
++        System.out.println(t.getText());
++        //t.click();
++        ((JavascriptExecutor) driver).executeScript("arguments[0].click()", t);
++        t = (new WebDriverWait(driver, 10)).
++
++
++                //Кликнуть войти в систему
++                //*[@id="__BVID__34___BV_modal_body_"]/div[2]/button[2]/span
++                        until(ExpectedConditions.presenceOfElementLocated(xpath("//*[@id=\"__BVID__34___BV_modal_body_\"]/div[2]/button[2]/span")));
++        System.out.println(t);
++        System.out.println(t.isEnabled());
++        System.out.println(t.isDisplayed());
++        System.out.println(t.getText());
++        //t.click();
++        ((JavascriptExecutor) driver).executeScript("arguments[0].click()", t);
++        Thread.sleep(50000);
++        //t = (new WebDriverWait(driver, 10));
++
++                /*Обходим ошибку
++                        until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#__BVID__150___BV_modal_footer_ > div > button")));
++        System.out.println(t);
++        System.out.println(t.isEnabled());
++        System.out.println(t.isDisplayed());
++        System.out.println(t.getText());
++        //t.click();
++        ((JavascriptExecutor) driver).executeScript("arguments[0].click()", t);*/
++        t = (new WebDriverWait(driver, 240)).
++
++                //Подать заявление
++                        until(ExpectedConditions.presenceOfElementLocated(cssSelector("#app > div.wrapper > div.main-panel > div.content > div > div > div > div.card > div.card-body > button > span")));
++        System.out.println(t);
++        System.out.println(t.isEnabled());
++        System.out.println(t.isDisplayed());
++        System.out.println(t.getText());
++        //t.click();
++        ((JavascriptExecutor) driver).executeScript("arguments[0].click()", t);
++        Thread.sleep(3000);
++
++        //Предполагаемая дата выдачи
++
++        WebElement element_form;
++        WebElement element_cell;
++        WebElement element;
++        List<WebElement>element_list, element_list2, element_list3;
++       // element_form = driver.findElement(tagName("form"));
++
++       //1
++        element_form = driver.findElement(tagName("form"));
++
++        //2
++       element_list = element_form.findElements(tagName("input"));
++
++       //3
++        element = element_list.get(0);;
++
++        //4
++        element_list2 = element_form.findElements(tagName("select"));
++
++         //5
++        WebElement element_select;
++        element_select = element_list2.get(0);
++
++        //6
++       element_list3 = element_select.findElements(tagName("option"));
++        System.out.println(element_list3);
++
++        //7
++        //WebElement element;
++        element = element_list3.get(0);
++
++    }
++
++
++}
+\ No newline at end of file
+Index: src/test/java/TradeFinance/Test777.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/java/TradeFinance/Test777.java	(date 1579279359670)
++++ src/test/java/TradeFinance/Test777.java	(date 1579279359670)
+@@ -1,43 +1,0 @@
+-// Generated by Selenium IDE
+-
+-package TradeFinance;
+-
+-import org.junit.After;
+-import org.junit.Before;
+-import org.junit.Test;
+-import org.openqa.selenium.By;
+-import org.openqa.selenium.Dimension;
+-import org.openqa.selenium.JavascriptExecutor;
+-import org.openqa.selenium.WebDriver;
+-import org.openqa.selenium.chrome.ChromeDriver;
+-
+-import java.util.HashMap;
+-import java.util.Map;
+-
+-public class Test777 {
+-private WebDriver driver;
+-//private Map<String, Object> vars;
+-//        JavascriptExecutor js;
+-@Before
+-public void setUp(){
+-  driver=new ChromeDriver();
+-      //  js=(JavascriptExecutor)driver;
+-      //  vars=new HashMap<String, Object>();
+-        }
+-@After
+-public void tearDown(){
+-        //driver.quit();
+-        }
+-@Test
+-public void Test777(){
+-        /*driver.get("google.com");
+-        driver.manage().window().setSize(new Dimension(1936,1056));
+-        driver.findElement(By.cssSelector("#\\__BVID__81___BV_modal_body_ .icon-text")).click();
+-        driver.findElement(By.cssSelector(".btn-outline-primary:nth-child(2) > span")).click();
+-        driver.findElement(By.cssSelector(".btn-success:nth-child(1) > .icon-text")).click();
+-        driver.findElement(By.cssSelector(".float-left > .icon-text")).click();
+-        driver.findElement(By.cssSelector("#\\__BVID__200___BV_modal_footer_ .btn")).click();
+-        driver.findElement(By.cssSelector(".btn-info > .icon-text")).click();
+-        driver.findElement(By.linkText("Выход")).click(); */
+-        }
+-        }
+Index: src/test/java/Test1Test.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/java/Test1Test.java	(date 1579280259072)
++++ src/test/java/Test1Test.java	(date 1579280259072)
+@@ -1,91 +1,0 @@
+-// Generated by Selenium IDE
+-
+-//Открытие счета
+-
+-import org.junit.Test;
+-import org.junit.Before;
+-import org.junit.After;
+-import static org.junit.Assert.*;
+-import static org.hamcrest.CoreMatchers.is;
+-import static org.hamcrest.core.IsNot.not;
+-import org.openqa.selenium.By;
+-import org.openqa.selenium.WebDriver;
+-import org.openqa.selenium.firefox.FirefoxDriver;
+-import org.openqa.selenium.Dimension;
+-import org.openqa.selenium.WebElement;
+-import org.openqa.selenium.interactions.Actions;
+-import org.openqa.selenium.support.ui.ExpectedConditions;
+-import org.openqa.selenium.support.ui.WebDriverWait;
+-import org.openqa.selenium.JavascriptExecutor;
+-import org.openqa.selenium.Alert;
+-import org.openqa.selenium.Keys;
+-import java.util.*;
+-public class Test1Test {
+-  private WebDriver driver;
+-  private Map<String, Object> vars;
+-  JavascriptExecutor js;
+-  @Before
+-  public void setUp() {
+-    driver = new FirefoxDriver();
+-    js = (JavascriptExecutor) driver;
+-    vars = new HashMap<String, Object>();
+-  }
+- // @After
+-  public void tearDown() {
+-    driver.quit();
+-  }
+-  @Test
+-  public void test1Test() {
+-    driver.get("http://77.244.210.158:8082/");
+-    driver.manage().window().setSize(new Dimension(1920, 1040));
+-    driver.findElement(By.id("selectAddress")).click();
+-    {
+-      WebElement dropdown = driver.findElement(By.id("selectAddress"));
+-      dropdown.findElement(By.xpath("//option[. = '0x7a6bd923d6f951d010bc899c96b2411f790ef789 - MANAGER']")).click();
+-    }
+-    driver.findElement(By.cssSelector("option:nth-child(3)")).click();
+-    driver.findElement(By.cssSelector(".btn")).click();
+-    driver.findElement(By.linkText("Счета")).click();
+-    driver.findElement(By.cssSelector(".fa-plus-square")).click();
+-    driver.findElement(By.id("accType")).click();
+-    {
+-      WebElement dropdown = driver.findElement(By.id("accType"));
+-      dropdown.findElement(By.xpath("//option[. = 'L10 - Владелец']")).click();
+-    }
+-    driver.findElement(By.cssSelector("#accType > option:nth-child(4)")).click();
+-    js.executeScript("window.scrollTo(0,0)");
+-    driver.findElement(By.id("number")).click();
+-    driver.findElement(By.id("number")).sendKeys("1");
+-    driver.findElement(By.id("reasonDoc-openAcc-0")).click();
+-    {
+-      WebElement dropdown = driver.findElement(By.id("reasonDoc-openAcc-0"));
+-      dropdown.findElement(By.xpath("//option[. = '7: WHixZmxqUho.jpg [бтбь] от Тыгыдык №б/н']")).click();
+-    }
+-    driver.findElement(By.cssSelector("#reasonDoc-openAcc-0 > option:nth-child(3)")).click();
+-    driver.findElement(By.id("reasonDoc-mortgageNew-0")).click();
+-    {
+-      WebElement dropdown = driver.findElement(By.id("reasonDoc-mortgageNew-0"));
+-      dropdown.findElement(By.xpath("//option[. = '7: WHixZmxqUho.jpg [бтбь] от Тыгыдык №б/н']")).click();
+-    }
+-    driver.findElement(By.cssSelector("#reasonDoc-mortgageNew-0 > option:nth-child(3)")).click();
+-    driver.findElement(By.id("reasonDoc-ownerRequest-0")).click();
+-    {
+-      WebElement dropdown = driver.findElement(By.id("reasonDoc-ownerRequest-0"));
+-      dropdown.findElement(By.xpath("//option[. = '7: WHixZmxqUho.jpg [бтбь] от Тыгыдык №б/н']")).click();
+-    }
+-    driver.findElement(By.cssSelector("#reasonDoc-ownerRequest-0 > option:nth-child(3)")).click();
+-    driver.findElement(By.id("reasonDoc-changeAgreement-0")).click();
+-    {
+-      WebElement dropdown = driver.findElement(By.id("reasonDoc-changeAgreement-0"));
+-      dropdown.findElement(By.xpath("//option[. = '7: WHixZmxqUho.jpg [бтбь] от Тыгыдык №б/н']")).click();
+-    }
+-    driver.findElement(By.cssSelector("#reasonDoc-changeAgreement-0 > option:nth-child(3)")).click();
+-    driver.findElement(By.id("reasonDoc-mortgageWithdrawal-0")).click();
+-    {
+-      WebElement dropdown = driver.findElement(By.id("reasonDoc-mortgageWithdrawal-0"));
+-      dropdown.findElement(By.xpath("//option[. = '7: WHixZmxqUho.jpg [бтбь] от Тыгыдык №б/н']")).click();
+-    }
+-    driver.findElement(By.cssSelector("#reasonDoc-mortgageWithdrawal-0 > option:nth-child(3)")).click();
+-    driver.findElement(By.name("open")).click();
+-  }
+-}
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/vcs.xml	(date 1579287565906)
++++ .idea/vcs.xml	(date 1579287565906)
+@@ -2,5 +2,6 @@
+ <project version="4">
+   <component name="VcsDirectoryMappings">
+     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(date 1579288363115)
++++ .idea/misc.xml	(date 1579288363115)
+@@ -5,10 +5,12 @@
+     <option name="originalFiles">
+       <list>
+         <option value="$PROJECT_DIR$/pom.xml" />
++        <option value="$PROJECT_DIR$/src/test/java/TF/pom.xml" />
++        <option value="$PROJECT_DIR$/src/test/java/TF/target/maven-archiver/pom.properties" />
+       </list>
+     </option>
+   </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+-    <output url="file://$PROJECT_DIR$/out" />
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/src/test/java/TF" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/compiler.xml	(date 1579596251337)
++++ .idea/compiler.xml	(date 1579596251337)
+@@ -7,6 +7,8 @@
+         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+         <outputRelativeToContentRoot value="true" />
+         <module name="maven-example" />
++        <module name="1" />
++        <module name="maven-archiver" />
+       </profile>
+     </annotationProcessing>
+   </component>
+Index: local_history.patch
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- local_history.patch	(date 1579608763635)
++++ local_history.patch	(date 1579608763635)
+@@ -0,0 +1,0 @@

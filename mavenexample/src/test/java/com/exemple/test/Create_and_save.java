@@ -5,30 +5,19 @@ package com.exemple.test;
 
 
 
-import static org.junit.Assert.fail;
-
-
-
-import java.io.File;
-import java.util.ArrayList;
-
-
-
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.engine.script.Script;
-import org.junit.jupiter.params.provider.Arguments;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openqa.selenium.JavascriptExecutor;
+
+import java.io.File;
 
 
 class Create_and_save {
@@ -169,7 +158,7 @@ class Create_and_save {
 
         //СРОК РАССМОТРЕНИЯ ТРЕБОВАНИЯ И ПРИЛОЖЕННЫХ К НЕМУ ДОКУМЕНТОВ
         element = driver.findElement(By.xpath("//*[@id=\"__BVID__318\"]"));
-        element.sendKeys("7");
+     //   element.sendKeys("7");
 
         //ПОДСУДНОСТЬ
         driver.findElement(By.xpath("//*[@id=\"__BVID__339\"]/option[2]")).click(); //*[@id="__BVID__339"]/option[2]

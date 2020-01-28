@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/coolbox.iml" filepath="$PROJECT_DIR$/.idea/modules/coolbox.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/coolbox.main.iml" filepath="$PROJECT_DIR$/.idea/modules/coolbox.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/coolbox.test.iml" filepath="$PROJECT_DIR$/.idea/modules/coolbox.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/java_pft.iml" filepath="$PROJECT_DIR$/.idea/java_pft.iml" />
     </modules>
   </component>
