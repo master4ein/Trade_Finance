@@ -1,4 +1,4 @@
-package com.exemple.test;
+package TEST_AUTOMATION;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -179,7 +179,7 @@ class Create_and_Save_S1 {
 
         System.out.println(element.getText());
         System.out.println(element.getAttribute("id"));
-        element.sendKeys("333");
+        element.sendKeys("102030");
         //Валюта
         // driver.findElement(By.xpath("//*[@id=\"__BVID__287\"]/option[3]")).click();
 

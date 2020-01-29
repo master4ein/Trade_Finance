@@ -147,7 +147,7 @@
       <module name="maven-example" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.exemple.test.*" />
+          <option name="PATTERN" value="TEST_AUTOMATION.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -173,12 +173,12 @@
       <module name="maven-example" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.exemple.test.*" />
+          <option name="PATTERN" value="TEST_AUTOMATION.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.exemple.test" />
-      <option name="MAIN_CLASS_NAME" value="com.exemple.test.Create_and_Save_S1" />
+      <option name="PACKAGE_NAME" value="TEST_AUTOMATION" />
+      <option name="MAIN_CLASS_NAME" value="TEST_AUTOMATION.Create_and_Save_S1" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -189,12 +189,12 @@
       <module name="maven-example" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.exemple.test.*" />
+          <option name="PATTERN" value="TEST_AUTOMATION.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.exemple.test" />
-      <option name="MAIN_CLASS_NAME" value="com.exemple.test.Create_and_Save_S1" />
+      <option name="PACKAGE_NAME" value="TEST_AUTOMATION" />
+      <option name="MAIN_CLASS_NAME" value="TEST_AUTOMATION.Create_and_Save_S1" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -258,7 +258,7 @@
       <module name="maven-example" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.exemple.test.*" />
+          <option name="PATTERN" value="TEST_AUTOMATION.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
