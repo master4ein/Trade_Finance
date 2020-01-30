@@ -17,7 +17,7 @@ import java.util.List;
 import static org.openqa.selenium.By.*;
 
 
-class Create_and_Save_S1 {
+class S1_Create_and_Save {
 
     private WebDriver driver;
 
@@ -179,7 +179,7 @@ class Create_and_Save_S1 {
 
         System.out.println(element.getText());
         System.out.println(element.getAttribute("id"));
-        element.sendKeys("102030");
+        element.sendKeys("906090");
         //Валюта
         // driver.findElement(By.xpath("//*[@id=\"__BVID__287\"]/option[3]")).click();
 
@@ -273,7 +273,7 @@ class Create_and_Save_S1 {
         t.click();
         ((JavascriptExecutor) driver).executeScript("arguments[0].click()", t);
         //t = (new WebDriverWait(driver, 80))
-        Thread.sleep(50000);
+        Thread.sleep(60000);
     }
 
 

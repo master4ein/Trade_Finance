@@ -122,17 +122,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Create_and_Save_S1">
+  <component name="RunManager" selected="JUnit.S4_Signatory_issues_a_guarantee">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WowTest_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="WowTest_1" />
-      <module name="maven-example" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -164,39 +156,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Authorization" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Create_and_Save_S1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="maven-example" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TEST_AUTOMATION.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="TEST_AUTOMATION" />
-      <option name="MAIN_CLASS_NAME" value="TEST_AUTOMATION.Create_and_Save_S1" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Create_and_Save_S1.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="maven-example" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TEST_AUTOMATION.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="TEST_AUTOMATION" />
-      <option name="MAIN_CLASS_NAME" value="TEST_AUTOMATION.Create_and_Save_S1" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -254,7 +213,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SendForSignature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="S1_Create_and_Save" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="maven-example" />
       <extension name="coverage">
         <pattern>
@@ -262,8 +221,72 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.exemple.test" />
-      <option name="MAIN_CLASS_NAME" value="com.exemple.test.SendForSignature" />
+      <option name="PACKAGE_NAME" value="TEST_AUTOMATION" />
+      <option name="MAIN_CLASS_NAME" value="TEST_AUTOMATION.S1_Create_and_Save" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="S2_Sign_and_send" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="maven-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TEST_AUTOMATION.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TEST_AUTOMATION" />
+      <option name="MAIN_CLASS_NAME" value="TEST_AUTOMATION.S2_Sign_and_send" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="S3A_Operator_send_warranty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="maven-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TEST_AUTOMATION.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TEST_AUTOMATION" />
+      <option name="MAIN_CLASS_NAME" value="TEST_AUTOMATION.S3A_Operator_send_warranty" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="S3_Creating_a_warranty_project" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="maven-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TEST_AUTOMATION.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TEST_AUTOMATION" />
+      <option name="MAIN_CLASS_NAME" value="TEST_AUTOMATION.S3_Creating_a_warranty_project" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="S4_Signatory_issues_a_guarantee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="maven-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TEST_AUTOMATION.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TEST_AUTOMATION" />
+      <option name="MAIN_CLASS_NAME" value="TEST_AUTOMATION.S4_Signatory_issues_a_guarantee" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -342,22 +365,24 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.WowTest_1" />
       <item itemvalue="JUnit.Create_and_save" />
       <item itemvalue="JUnit.Authorization" />
       <item itemvalue="JUnit.Create_and_save " />
       <item itemvalue="JUnit.Aut_Oper_CrPro" />
-      <item itemvalue="JUnit.SendForSignature" />
-      <item itemvalue="JUnit.Create_and_Save_S1" />
-      <item itemvalue="JUnit.Create_and_Save_S1.test" />
+      <item itemvalue="JUnit.S1_Create_and_Save" />
+      <item itemvalue="JUnit.S2_Sign_and_send" />
+      <item itemvalue="JUnit.S3_Creating_a_warranty_project" />
+      <item itemvalue="JUnit.S4_Signatory_issues_a_guarantee" />
       <item itemvalue="Maven.maven-example " />
+      <item itemvalue="JUnit.S3A_Operator_send_warranty" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Create_and_Save_S1" />
-        <item itemvalue="JUnit.Create_and_Save_S1.test" />
-        <item itemvalue="JUnit.SendForSignature" />
-        <item itemvalue="Application.WowTest_1" />
+        <item itemvalue="JUnit.S4_Signatory_issues_a_guarantee" />
+        <item itemvalue="JUnit.S3A_Operator_send_warranty" />
+        <item itemvalue="JUnit.S3_Creating_a_warranty_project" />
+        <item itemvalue="JUnit.S2_Sign_and_send" />
+        <item itemvalue="JUnit.S1_Create_and_Save" />
       </list>
     </recent_temporary>
   </component>
