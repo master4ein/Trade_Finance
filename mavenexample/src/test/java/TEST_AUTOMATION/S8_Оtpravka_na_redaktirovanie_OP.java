@@ -1,5 +1,7 @@
 package TEST_AUTOMATION;
 
+//Оператор подписант создает гарантию и редактирует
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -15,9 +17,9 @@ import java.io.File;
 import java.util.List;
 
 import static org.openqa.selenium.By.*;
+import static org.openqa.selenium.By.xpath;
 
-
-class S1_Create_and_Save {
+public class S8_Оtpravka_na_redaktirovanie_OP {
 
     private WebDriver driver;
 
@@ -111,7 +113,7 @@ class S1_Create_and_Save {
         element_list2 = element_form.findElements(tagName("select"));
 
         element = element_list.get(2);
-        element.sendKeys("31012021");
+        element.sendKeys("03022020");
 
 
         //№ соглашения/договора о выдаче гарантии(й)
@@ -179,7 +181,7 @@ class S1_Create_and_Save {
 
         System.out.println(element.getText());
         System.out.println(element.getAttribute("id"));
-        element.sendKeys("1001");
+        element.sendKeys("99");
         //Валюта
         // driver.findElement(By.xpath("//*[@id=\"__BVID__287\"]/option[3]")).click();
 
@@ -190,7 +192,7 @@ class S1_Create_and_Save {
 
         System.out.println(element.getText());
         System.out.println(element.getAttribute("id"));
-        element.sendKeys("31012021");
+        element.sendKeys("03022020");
 
         //ОБЯЗАТЕЛЬСТВО, ИСПОЛНЕНИЕ КОТОРОГО ОБЕСПЕЧИВАЕТСЯ ГАРАНТИЕЙ
         //Номер договора
@@ -233,8 +235,8 @@ class S1_Create_and_Save {
         t = (new WebDriverWait(driver, 10)).
 
 
-               // Сохранить заявление
-                                                                                 ///html/body/div/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/form/div[68]/button[2]/span
+                // Сохранить заявление
+                ///html/body/div/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/form/div[68]/button[2]/span
                         until(ExpectedConditions.presenceOfElementLocated(xpath("//*[@id=\"app\"]/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/form/div[68]/button[2]/span")));
         System.out.println(t);
         System.out.println(t.isEnabled());
@@ -243,13 +245,58 @@ class S1_Create_and_Save {
         t.click();
         ((JavascriptExecutor) driver).executeScript("arguments[0].click()", t);
         t = (new WebDriverWait(driver, 80)).
+
+                /*Удалить заявление
+                        until(ExpectedConditions.presenceOfElementLocated(xpath("/html/body/div/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/div[10]/button[2]")));
+        System.out.println(t);
+        System.out.println(t.isEnabled());
+        System.out.println(t.isDisplayed());
+        System.out.println(t.getText());
+        t.click();
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click()", t);
+        //t = (new WebDriverWait(driver, 80)).
+        Thread.sleep(30000); */
+
+
         //Thread.sleep(50000);
-                                                                                 //html/body/div/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/div[10]/button[4]/span
-                //Отправить на подпись                                           /html/body/div/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/div[10]/button[4]/span
-             //   element = driver.findElement(xpath("/html/body/div/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/div[10]/button[4]/span"));
-       // element.click();
-      //  Thread.sleep(5000);
-              until(ExpectedConditions.presenceOfElementLocated(xpath("/html/body/div/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/div[10]/button[4]/span")));
+        //html/body/div/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/div[10]/button[4]/span
+
+              //Редактировать
+               until(ExpectedConditions.presenceOfElementLocated(xpath("/html/body/div/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/div[10]/button[3]")));
+        System.out.println(t);
+        System.out.println(t.isEnabled());
+        System.out.println(t.isDisplayed());
+        System.out.println(t.getText());
+        t.click();
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click()", t);
+        t = (new WebDriverWait(driver, 10)).
+
+
+                //Изменить валюту на Евро
+                        until(ExpectedConditions.presenceOfElementLocated(xpath("/html/body/div/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/form/div[14]/div[4]/span[2]/select/option[3]")));
+        System.out.println(t);
+        System.out.println(t.isEnabled());
+        System.out.println(t.isDisplayed());
+        System.out.println(t.getText());
+        t.click();
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click()", t);
+        t = (new WebDriverWait(driver, 10)).
+
+                //Ок
+                        until(ExpectedConditions.presenceOfElementLocated(xpath("/html/body/div/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/form/div[68]/button[2]")));
+        System.out.println(t);
+        System.out.println(t.isEnabled());
+        System.out.println(t.isDisplayed());
+        System.out.println(t.getText());
+        t.click();
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click()", t);
+        t = (new WebDriverWait(driver, 10)).
+
+//Отправить на подпись                                           /html/body/div/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/div[10]/button[4]/span
+                //   element = driver.findElement(xpath("/html/body/div/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/div[10]/button[4]/span"));
+                // element.click();
+                //  Thread.sleep(5000);
+                        until(ExpectedConditions.presenceOfElementLocated(xpath("/html/body/div/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/div[10]/button[4]/span")));
         System.out.println(t);
         System.out.println(t.isEnabled());
         System.out.println(t.isDisplayed());
@@ -261,11 +308,11 @@ class S1_Create_and_Save {
 
 
                 //Подтвердить действие                                             /html/body/div/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/div[4]/div/div[1]/div/div/footer/div/button[2]/span
-                                                                                 //html/body/div/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/div[4]/div/div[1]/div/div/footer/div/button[2]/span
-        //element = driver.findElement(xpath("/html/body/div/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/div[4]/div/div[1]/div/div/footer/div/button[2]/span"));
-        //element.click();
-        //
-                until(ExpectedConditions.presenceOfElementLocated(xpath("/html/body/div/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/div[4]/div/div[1]/div/div/footer/div/button[2]")));
+                //html/body/div/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/div[4]/div/div[1]/div/div/footer/div/button[2]/span
+                //element = driver.findElement(xpath("/html/body/div/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/div[4]/div/div[1]/div/div/footer/div/button[2]/span"));
+                //element.click();
+                //
+                        until(ExpectedConditions.presenceOfElementLocated(xpath("/html/body/div/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/div[4]/div/div[1]/div/div/footer/div/button[2]")));
         System.out.println(t);
         System.out.println(t.isEnabled());
         System.out.println(t.isDisplayed());
@@ -274,6 +321,9 @@ class S1_Create_and_Save {
         ((JavascriptExecutor) driver).executeScript("arguments[0].click()", t);
         //t = (new WebDriverWait(driver, 80))
         Thread.sleep(60000);
+
+
+
     }
 
 
@@ -293,3 +343,4 @@ class S1_Create_and_Save {
 
 
 }
+

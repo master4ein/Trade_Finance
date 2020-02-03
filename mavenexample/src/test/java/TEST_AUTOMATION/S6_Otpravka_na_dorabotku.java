@@ -1,5 +1,4 @@
-//Подписываем заявку на выдачу ЦБГ и отправляем в Банк на рассмотрение
-
+//Отправляем на доработку ПП
 package TEST_AUTOMATION;
 
 import org.junit.jupiter.api.AfterEach;
@@ -18,7 +17,7 @@ import java.io.File;
 
 import static org.openqa.selenium.By.xpath;
 
-public class S2_Sign_and_send {
+public class S6_Otpravka_na_dorabotku {
 
     private WebDriver driver;
 
@@ -49,7 +48,7 @@ public class S2_Sign_and_send {
 
         //
         WebElement t = (new WebDriverWait(driver, 30)).
-        until(ExpectedConditions.presenceOfElementLocated(By.tagName("button")));
+                until(ExpectedConditions.presenceOfElementLocated(By.tagName("button")));
         ((JavascriptExecutor) driver).executeScript("arguments[0].click()", t);
         t = (new WebDriverWait(driver, 10)).
 
@@ -90,9 +89,9 @@ public class S2_Sign_and_send {
         ((JavascriptExecutor) driver).executeScript("arguments[0].click()", t);
         t = (new WebDriverWait(driver, 60)).
 
-            //Подписать и отправить
+                //Отправить на доработку
 
-                    until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/div[10]/button[3]")));
+                        until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/div[10]/button[2]")));
         System.out.println(t);
         System.out.println(t.isEnabled());
         System.out.println(t.isDisplayed());
@@ -101,17 +100,27 @@ public class S2_Sign_and_send {
         ((JavascriptExecutor) driver).executeScript("arguments[0].click()", t);
         t = (new WebDriverWait(driver, 60)).
 
-            //Подтвердить действие
+                //Отправка заявления на доработку
+                //Пожалуйста, укажите замечания к документу
 
-                until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/div[5]/div/div[1]/div/div/footer/div/button[2]")));
+                        until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/div[1]/div/div[1]/div/div/div/form/div/div/textarea")));
+        System.out.println(t);
+        System.out.println(t.isEnabled());
+        System.out.println(t.isDisplayed());
+        System.out.println(t.getText());
+        t.sendKeys("TEST");
+        t = (new WebDriverWait(driver, 10)).
+
+        //Отправить
+                until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/div[1]/div/div[1]/div/div/footer/div/button[2]")));
         System.out.println(t);
         System.out.println(t.isEnabled());
         System.out.println(t.isDisplayed());
         System.out.println(t.getText());
         //t.click();
         ((JavascriptExecutor) driver).executeScript("arguments[0].click()", t);
-        Thread.sleep(30000);
-
+       // t = (new WebDriverWait(driver, 60)).
+        Thread.sleep(50000);
 
 
     }
@@ -133,3 +142,4 @@ public class S2_Sign_and_send {
 
 
 }
+

@@ -122,7 +122,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.S4_Signatory_issues_a_guarantee">
+  <component name="RunManager" selected="JUnit.S9_Otpravka_na_dorabotku_PG">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -245,22 +245,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="S3A_Operator_send_warranty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="maven-example" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TEST_AUTOMATION.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="TEST_AUTOMATION" />
-      <option name="MAIN_CLASS_NAME" value="TEST_AUTOMATION.S3A_Operator_send_warranty" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="S3_Creating_a_warranty_project" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="maven-example" />
       <extension name="coverage">
@@ -277,7 +261,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="S4_Signatory_issues_a_guarantee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="S7_Delete_warranty_OP" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="maven-example" />
       <extension name="coverage">
         <pattern>
@@ -286,7 +270,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="TEST_AUTOMATION" />
-      <option name="MAIN_CLASS_NAME" value="TEST_AUTOMATION.S4_Signatory_issues_a_guarantee" />
+      <option name="MAIN_CLASS_NAME" value="TEST_AUTOMATION.S7_Delete_warranty_OP" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="S9_Otpravka_na_dorabotku_PG" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="maven-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TEST_AUTOMATION.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TEST_AUTOMATION" />
+      <option name="MAIN_CLASS_NAME" value="TEST_AUTOMATION.S9_Otpravka_na_dorabotku_PG" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -371,17 +371,17 @@
       <item itemvalue="JUnit.Aut_Oper_CrPro" />
       <item itemvalue="JUnit.S1_Create_and_Save" />
       <item itemvalue="JUnit.S2_Sign_and_send" />
-      <item itemvalue="JUnit.S3_Creating_a_warranty_project" />
-      <item itemvalue="JUnit.S4_Signatory_issues_a_guarantee" />
       <item itemvalue="Maven.maven-example " />
-      <item itemvalue="JUnit.S3A_Operator_send_warranty" />
+      <item itemvalue="JUnit.S3_Creating_a_warranty_project" />
+      <item itemvalue="JUnit.S7_Delete_warranty_OP" />
+      <item itemvalue="JUnit.S9_Otpravka_na_dorabotku_PG" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.S4_Signatory_issues_a_guarantee" />
-        <item itemvalue="JUnit.S3A_Operator_send_warranty" />
+        <item itemvalue="JUnit.S9_Otpravka_na_dorabotku_PG" />
         <item itemvalue="JUnit.S3_Creating_a_warranty_project" />
         <item itemvalue="JUnit.S2_Sign_and_send" />
+        <item itemvalue="JUnit.S7_Delete_warranty_OP" />
         <item itemvalue="JUnit.S1_Create_and_Save" />
       </list>
     </recent_temporary>

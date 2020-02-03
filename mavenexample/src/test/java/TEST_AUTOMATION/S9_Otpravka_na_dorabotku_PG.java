@@ -1,6 +1,6 @@
 package TEST_AUTOMATION;
 
-//Подписант выдает гарантию + публикация БГ
+//Подписант-гарант отправляет заявление на выдачу БГ "На доработку"
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -18,7 +18,7 @@ import java.io.File;
 
 import static org.openqa.selenium.By.xpath;
 
-public class S4_Signatory_issues_a_guarantee {
+public class S9_Otpravka_na_dorabotku_PG {
 
     private WebDriver driver;
 
@@ -101,6 +101,40 @@ public class S4_Signatory_issues_a_guarantee {
         ((JavascriptExecutor) driver).executeScript("arguments[0].click()", t);
         t = (new WebDriverWait(driver, 10)).
 
+               //Отправить на доработку
+
+        until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/div[6]/button[2]")));
+        System.out.println(t);
+        System.out.println(t.isEnabled());
+        System.out.println(t.isDisplayed());
+        System.out.println(t.getText());
+        //t.click();
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click()", t);
+        t = (new WebDriverWait(driver, 10)).
+
+                //Отправка заявления на доработку
+                //Пожалуйста, укажите замечания к документу
+
+                        until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/div[3]/div/div[1]/div/div/div/form/div/div/textarea")));
+        System.out.println(t);
+        System.out.println(t.isEnabled());
+        System.out.println(t.isDisplayed());
+        System.out.println(t.getText());
+        t.sendKeys("TEST");
+        t = (new WebDriverWait(driver, 10)).
+
+                //Отправить
+
+                        until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/div[3]/div/div[1]/div/div/footer/div/button[2]")));
+        System.out.println(t);
+        System.out.println(t.isEnabled());
+        System.out.println(t.isDisplayed());
+        System.out.println(t.getText());
+        //t.click();
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click()", t);
+        //t = (new WebDriverWait(driver, 10)).
+        Thread.sleep(60000);
+                /*
                 //Подписать и выдать
 
                         until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div/div[2]/div[2]/div[1]/div/div/div/div[3]/div[2]/div[6]/button[3]")));
@@ -134,6 +168,8 @@ public class S4_Signatory_issues_a_guarantee {
         ((JavascriptExecutor) driver).executeScript("arguments[0].click()", t);
         //t = (new WebDriverWait(driver, 10)).
         Thread.sleep(50000);
+
+                 */
     }
 
 
@@ -153,5 +189,6 @@ public class S4_Signatory_issues_a_guarantee {
 
 
 }
+
 
 
